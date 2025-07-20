@@ -11,10 +11,9 @@ llm = HuggingFaceEndpoint(
     max_new_tokens=512,
     do_sample=False,
     repetition_penalty=1.03,
-    huggingfacehub_api_token= envValue,
-    provider="auto"
+    huggingfacehub_api_token= envValue
 )
 
 chat_model = ChatHuggingFace(llm=llm)
-output = chat_model.invoke(input = "Who has most number of world championships in F1")
+output = chat_model.invoke(input = "Tell me about Kerala")
 print(output.content)
