@@ -15,5 +15,5 @@ llm = HuggingFaceEndpoint(
 )
 
 chat_model = ChatHuggingFace(llm=llm)
-output = chat_model.invoke(input = "Tell me about Kerala")
+output = chat_model.invoke(input = "Tell me about kajal")
 print(output.content)
