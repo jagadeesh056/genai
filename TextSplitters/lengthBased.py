@@ -10,7 +10,7 @@ text = """One of the most important things I didn't understand about the world w
 
 splitter = CharacterTextSplitter(
     chunk_size = 50,
-    chunk_overlap = 4,
+    chunk_overlap = 0,
     separator = ""
 )
 
